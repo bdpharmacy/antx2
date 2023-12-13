@@ -1,3 +1,24 @@
+#Can't create new project
+I tried to create a project from Main > New Project. It shows following error : 
+Unrecognized function or variable 'nanmax'.
+
+Error in paramgui>makennicer (line 5034)
+imax=nanmax(ip);
+
+Error in paramgui (line 538)
+qw3=makennicer(qw3);
+
+Error in antconfig (line 282)
+        [m z a params]=paramgui(p2,'uiwait',1,'close',1,'editorpos',[.03 0 1 1],'figpos',figpos,...
+
+Error in xnewproject (line 37)
+[m z]=antconfig(1,'parameter','default','savecb','no');
+
+Error in ant>menubarCB (line 2462)
+    xnewproject;
+ 
+Error while evaluating Menu Callback.
+
 ## **ANTx2 Modifications**
  &#x1F34E; last modification:   12 Dec 2023 (14:09:47)  
     
@@ -453,9 +474,9 @@
       5) Visualize files and folders  
       6) Selection of animals  
       7) Rename files  
-      8) Register “t2.nii” to template (standard space, ss)  
+      8) Register Â“t2.niiÂ” to template (standard space, ss)  
       9) Extract the first 3d-volume from the 4d-vlume 'dti_b100.nii'   
-      10) Coregister 'dti_b100_1stimg.nii' to ‘t2.nii’  
+      10) Coregister 'dti_b100_1stimg.nii' to Â‘t2.niiÂ’  
       11) Transform another image to standard-space  
       12) Transform another image to native-space  
       13) Check registration in standard-space - create html-file  
@@ -810,7 +831,7 @@
 <!---->
   &#x1F535;   <ins>**23 Aug 2021 (14:12:17)**</ins>  
    __[xcalcSNRimage.m]__ convert image to SNR-image   
-  according to Gudbjartsson H, Patz S. 1995: The Rician distribution of noisy MRI data. Magn Reson Med.; 34(6): 910–914.)  
+  according to Gudbjartsson H, Patz S. 1995: The Rician distribution of noisy MRI data. Magn Reson Med.; 34(6): 910Â–914.)  
   -can be used for Fluorine-19 (19F)-contrast images   
   &#8618;  access via ANT-menu: SNIPS/convert image to SNR-image  
 <!---->
@@ -894,12 +915,12 @@
                 3. Define a project  
                 4. Import Bruker data  
                 5. Import templates for this study  
-                6. Create a ‘t2.nii’ image  
+                6. Create a Â‘t2.niiÂ’ image  
                 7. Examine Orientation  
-                8. Register ‘t2.nii’ to the template  
+                8. Register Â‘t2.niiÂ’ to the template  
                 9. Back-transform template brain mask to native space  
               10. Extract 1st image of the 4D BOLD series  
-              11. Coregister ‘t2.nii’ onto BOLD (RS-) Data  
+              11. Coregister Â‘t2.niiÂ’ onto BOLD (RS-) Data  
               12. Mask first EPI-image with brain mask  
               13. Scale up 4D data for FSL  
              &#8618; access via ANT-menu: Extras/documentations  or ..\antx2\mritools\ant\docs  
@@ -930,7 +951,7 @@
     -TODO: test MAC & LINUX   : DONE!  
 <!---->
   &#x1F535;   <ins>**30 Oct 2020 (14:50:30)**</ins>  
-  __[SIGMA RAT template]__ (Barrière et al., 2019) added to gdrive  
+  __[SIGMA RAT template]__ (BarriÃ¨re et al., 2019) added to gdrive  
     - Paper           : https://rdcu.be/b9tKX  or https://doi.org/10.1038/s41467-019-13575-7  
     - &#8618;  access via link : https://drive.google.com/drive/u/2/folders/1q5XOOVLvUYLqYsQJLqNRF7OK8fNwYhI9  
       or ANT menu: EXTRAS/download templates  
